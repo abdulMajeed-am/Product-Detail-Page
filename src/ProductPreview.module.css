@@ -1,0 +1,48 @@
+.ProductPreview{
+    width: 100%;
+    position: relative;
+    /* background-color: blue; */
+  }
+  .ProductPreview > img{
+    width: 100%;
+  }
+  .TimeSection{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+  }
+  .HeartBeat {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+  }
+  .HeartBeat > i{
+    color: red;
+    /* width: 40px;
+    height: 40px; */
+    /* background-color: aliceblue; */
+    animation: beat 1s infinite;
+  }
+  .HeartBeat > p{
+    margin-top: 16px;
+    font-size: 25px;
+    text-align: center;
+  }
+  @keyframes beat{
+    0%{
+      transform: scale(1,1);
+    }
+    50%{
+      transform: scale(1.2,1.2);
+    }
+    100%{
+      transform: scale(1,1);
+    }
+  }

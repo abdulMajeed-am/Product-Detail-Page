@@ -1,0 +1,58 @@
+.ProductData{
+    width: 100%;
+}
+.ProductTitle{
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 16px;
+  }
+  .ProductDescription{
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    color: rgb(0, 0, 0,0.8);
+  }
+  .SelectOptions{
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+  .ProductImages{
+    width: 100%;
+    max-width: 80px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    margin-right: 12px;
+    cursor: pointer;
+  }
+  .SelectedProductImage{
+    border: 2px solid teal;
+  }
+  .Buttons1{
+    min-width: 80px;
+    text-align: center;
+    margin-right: 12px;
+    padding: 12px 24px;
+    box-sizing: border-box;
+    font-weight: 600;
+    border-radius: 8px;
+    font-size: 20px;
+    border: 0;
+    cursor: pointer;
+  }
+  .SelectedButton1{
+    color: white;
+    background: grey;
+  }
+  .PrimaryButton{
+    text-align: center;
+    margin-right: 12px;
+    padding: 12px 24px;
+    box-sizing: border-box;
+    font-weight: 600;
+    border-radius: 8px;
+    font-size: 20px;
+    border: 0;
+    margin-top: 34px;
+  }
+  

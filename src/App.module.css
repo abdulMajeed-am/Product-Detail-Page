@@ -1,0 +1,135 @@
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+/* .Topbar{
+  background-color: #282c34;
+  width: 100%;
+  padding: 24px 48px 12px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+} */
+/* .Topbar > img{
+  width: 100px;
+  height: 50px;
+  color: white; /* Change the font color to white */
+  /* text-align: center; Center the text and image */ 
+/* }  */
+.MainContainer{
+  padding: 4% 12%;
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  /* background-color: aqua; */
+  /* background-color: rgb(22, 17, 10); */
+}
+ .ProductPreview{
+  width: 50%;
+  position: relative;
+  /* background-color: blue; */
+ }
+.ProductPreview > img{
+  width: 100%;
+} 
+.ProductData{
+  /* background-color: blueviolet; */
+  width: 50%;
+}
+/* .ProductTitle{
+  font-size: 48px;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+.ProductDescription{
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 16px;
+  color: rgb(0, 0, 0,0.8);
+}
+.SelectOptions{
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+.ProductImages{
+  width: 100%;
+  max-width: 80px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.SelectedProductImage{
+  border: 2px solid teal;
+}
+.Buttons1{
+  min-width: 80px;
+  text-align: center;
+  margin-right: 12px;
+  padding: 12px 24px;
+  box-sizing: border-box;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 20px;
+  border: 0;
+  cursor: pointer;
+}
+.SelectedButton1{
+  color: white;
+  background: grey;
+}
+.PrimaryButton{
+  text-align: center;
+  margin-right: 12px;
+  padding: 12px 24px;
+  box-sizing: border-box;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 20px;
+  border: 0;
+  margin-top: 34px;
+} */
+/* .TimeSection{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%,-50%);
+  font-size: 40px;
+}
+.HeartBeat {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%,-50%);
+  font-size: 40px;
+}
+.HeartBeat > i{
+  color: red;
+  /* width: 40px;
+  height: 40px; */
+  /* background-color: aliceblue; */
+  /* animation: beat 1s infinite;
+}
+.HeartBeat > p{
+  margin-top: 16px;
+  font-size: 25px;
+  text-align: center;
+}
+@keyframes beat{
+  0%{
+    transform: scale(1,1);
+  }
+  50%{
+    transform: scale(1.2,1.2);
+  }
+  100%{
+    transform: scale(1,1);
+  }
+} */ 
