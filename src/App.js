@@ -10,16 +10,26 @@ import ProductData from './TopBar/ProductData';
 class App extends Component {
   state ={
     productData: ProductData,
-    currentPreviewImage:'https://imgur.com/xSIK4M8.png',
-    showHeartBeatSection: false,
+    // currentPreviewImage:'https://imgur.com/xSIK4M8.png',
+    currentPreviewImagePos:0,
+    currentSelectedFeature: 0,
   }
   onColorOptionClick = (pos) => {
-    const updatedPreviewImage = this.state.productData.colorOptions[pos].imageUrl
-    console.log(updatedPreviewImage);
-    this.setState({currentPreviewImage: updatedPreviewImage});
+    // const updatedPreviewImage = this.state.productData.colorOptions[pos].imageUrl
+    // console.log(updatedPreviewImage);
+    this.setState({currentPreviewImagePos: pos});
   }
   // const currentHour= new Date().getHours() > 9 ? new Date().getHours() : '0' + new Date().getHours();
   // const currentMinute= new Date().getMinutes() > 9 ? new Date().getMinutes() : '0' + new Date().getMinutes();
+  
+  onFeatureItemClick = (pos) => {
+    // let updatedState = false
+    // if(pos===1){
+    //   updatedState= true;
+    // }
+    this.setState({currentSelectedFeature: pos});
+  }
+  
   render(){
     return (
       <div className="App">
@@ -31,7 +41,7 @@ class App extends Component {
         {/* </header> */}
         <div className={classes.MainContainer}>
           <div className={classes.ProductPreview}>
-            <ProductPreview currentPreviewImage={this.state.currentPreviewImage} showHeartBeatSection={this.state.showHeartBeatSection}/>
+            <ProductPreview currentPreviewImage={this.state.productData.colorOptions[this.state.currentPreviewImagePos].imageUrl} currentSelectedFeature={this.state.currentSelectedFeature} />
             {/* <img src='https://imgur.com/iOeUBV7.png' alt='Watch Image'/> */}
             
             {/* <div className={classes.TimeSection}>
@@ -44,7 +54,8 @@ class App extends Component {
   
           </div>
           <div className={classes.ProductData}>
-            <ProductDetails data={this.state.productData} onColorOptionClick={this.onColorOptionClick}/>
+            <ProductDetails data={this.state.productData} onColorOptionClick={this.onColorOptionClick} currentPreviewImagePos={this.state.currentPreviewImagePos}
+            onFeatureItemClick={this.onFeatureItemClick} currentSelectedFeature={this.state.currentSelectedFeature}/>
             {/* <h1 className={classes.ProductTitle}>{ProductData.title}</h1>
             <p className={classes.ProductDescription}>{ProductData.description}</p>
             <h3 className={classes.SelectOptions}>Select Color</h3>

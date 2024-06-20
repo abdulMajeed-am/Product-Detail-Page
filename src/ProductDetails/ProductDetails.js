@@ -5,7 +5,7 @@ import ProductData from '../TopBar/ProductData';
 const ProductDetails = (props) =>{
   const colorOptions= props.data.colorOptions.map((item,pos) => {
     const classArr= [classes.ProductImages]
-    if (pos===0){
+    if (pos===props.currentPreviewImagePos){
       classArr.push(classes.SelectedProductImages);
     }
     return(
@@ -15,11 +15,13 @@ const ProductDetails = (props) =>{
 
   const featureList= props.data.featureList.map((item, pos)=>{
     const classArr=[classes.Buttons1];
-    if(pos === 0){
+    if(pos ===props.currentSelectedFeature){
       classArr.push(classes.SelectedButton1);
+    // }else if(pos ===0 && !props.showHeartBeatSection){
+    //   classArr.push(classes.SelectedButton1)
     }
     return(
-      <button key={pos} className={classArr.join(' ')}>{item}</button>
+      <button onClick={()=>props.onFeatureItemClick(pos)} key={pos} className={classArr.join(' ')}>{item}</button>
     )
   })
 

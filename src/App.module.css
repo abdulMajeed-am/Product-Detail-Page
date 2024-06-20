@@ -39,6 +39,9 @@ body{
   /* background-color: blueviolet; */
   width: 50%;
 }
+/* .SelectedProductImages{
+  border: 5px solid teal;
+} */
 /* .ProductTitle{
   font-size: 48px;
   font-weight: 600;
@@ -63,9 +66,7 @@ body{
   margin-right: 12px;
   cursor: pointer;
 }
-.SelectedProductImage{
-  border: 2px solid teal;
-}
+
 .Buttons1{
   min-width: 80px;
   text-align: center;
